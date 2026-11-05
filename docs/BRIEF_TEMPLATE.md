@@ -4,9 +4,9 @@
 > Replace every <...>. Delete these quote lines. Copy `examples/water-tracker.md` for a worked example.
 
 ## What we want
-<2–3 sentences: what the app does and for whom. One main problem, not five.
-A banking alertment app
-Problem It may be easy to hack>
+2–3 sentences: what the app does and for whom. One main problem, not five.
+A banking alert app, that tell you log in and money withdraws or imponts
+Problem: It may be easy to hack.
 
 ## Users
 <Who uses it, on what device, how often. Anyone with special needs (accessibility)?>
@@ -17,7 +17,7 @@ Problem It may be easy to hack>
 3. <...>
 
 ## Should do   (if time allows)
-- <Hevity hack attack>
+- Hevity hack attack
 
 ## Constraints
 - Platform / technology: <e.g., one index.html, no backend, no build step>
