@@ -1,4 +1,4 @@
-# Full Spec: <App name>
+# Full Spec: <FINDIT>
 
 **Team:** 3F-1M  **Date:** 11/19/27  **Committer:** Tobias
 
@@ -8,30 +8,30 @@
 > In every section, finish with one line: **AI contribution:** what an AI suggested, and what you changed or rejected (write "none" if none).
 > Delete these quote lines when you are done.
 
-**Roles:** Product Owner ______ | Process lead ______ | Architect ______ | Quality lead ______ | Prompt engineer ______
+**Roles:** Product Owner IDK | Process lead IDK | Architect IDK | Quality lead IDK | Prompt engineer IDK
 
 ---
 
 ## 0. The idea (Chapter 1)
-- The single main problem, and for whom (one sentence):
-- Who is harmed if this app fails, is wrong, or leaks data?
-- Anything the app must never do (privacy, safety, legal):
+- The single main problem, and for whom (Customer):
+- Who is harmed if this app fails, is wrong, or leaks data? Everyone
+- Anything the app must never do (privacy, safety, legal): Who took the pic
 
 ## 1. Process and plan (Chapters 2 and 3)  Owner: ______
-- Process model we chose (plan-driven, incremental, or agile) and **why it fits this app** (2 sentences):
+- Process model we chose (plan-driven, incremental, or agile) and **why it fits this app** (We use agile as it allows the code to be fix and patch quickly):
 - Practices we actually use: stand-up / sprints / board / retrospective / code review / tests on every change
 - **Definition of Done** (checklist, 4 or more items):
-  - [ ]
-  - [ ]
-  - [ ]
-  - [ ]
+  - [Log in]
+  - [ log out]
+  - [ add money ]
+  - [ remove monet with a keycode]
 - Sprint plan (what is working at the end of each sprint):
 
 | Sprint | Working software at the end | se-agent run? |
 |---|---|---|
-| 1 | | |
-| 2 | | |
-| 3 | | |
+| 1 |y | y|
+| 2 | y|y |
+| 3 | n| y|
 
 - Biggest schedule risk and what we will do about it:
 - AI contribution:
@@ -41,7 +41,7 @@
 
 | Stakeholder | Wants |
 |---|---|
-| | |
+|1 |Better Password reset |
 
 **User stories** (as a ___, I want ___, so that ___), each with acceptance criteria:
 1.
@@ -72,18 +72,18 @@
 -
 
 **Check:** could two people read each requirement and build different things? Are there words like *fast*, *easy*, *secure*? Replace each with something observable.
-- AI contribution:
+- AI contribution: quick, clear, safe
 
 ## 3. Models (Chapter 5)  Owner (Architect): ______
 Text, bulleted lists, or Mermaid are all fine.
 
-**Context model** (what is inside the system, what is outside, what crosses the boundary):
+**Context model** (what is inside the system, what is outside, what crosses the boundary): API, And code
 
 **Use cases or a sequence model for the most important story:**
 
-**Class or data model** (main entities and how they relate):
+**Class or data model** (main entities and how they relate): the main data and aip code allow each new person
 
-**State model** (only if the app has modes; otherwise write "no modes"):
+**State model** (only if the app has modes; otherwise write "no modes"): no modes
 
 **Consistency check:** a requirement that appears in no model, or a model element no requirement needs, and how we resolved it:
 - AI contribution:
@@ -98,9 +98,9 @@ Text, bulleted lists, or Mermaid are all fine.
 
 | # | Decision | Alternatives | Reason (tie to an R-number) | Consequence |
 |---|---|---|---|---|
-| D1 | | | | |
-| D2 | | | | |
-| D3 | | | | |
+| D1 | google colab | cluab |it can help with the code | nothing |
+| D2 | name change | cash crash | og plan | name idea |
+| D3 | make l&F  | cash | | |
 
 - AI contribution:
 
@@ -123,9 +123,9 @@ Text, bulleted lists, or Mermaid are all fine.
 
 | Requirement | Test (file::name) | Type (unit / component / system / user) | How we will check it can fail |
 |---|---|---|---|
-| R1 | | | |
-| R2 | | | |
-| R3 | | | |
+| R1 |Main-1 |UNit |not finding item |
+| R2 |Main-2 |unit | dups |
+| R3 |Main-3 |unit | ? |
 
 **The three most important tests, in plain language** (input -> expected result):
 1.
@@ -155,7 +155,7 @@ Text, bulleted lists, or Mermaid are all fine.
 
 | Run | Sprint | Prompts | Model | Estimated cost (`uv run python cost_estimate.py docs/RUN_BRIEF.md`) |
 |---|---|---|---|---|
-| 1 | | | | |
+| 1 |run | anget |make | 1m|
 
 - Before we request a run, we confirmed: `uv run pytest` passes / Run Brief is 4,000 characters or fewer / each prompt follows the 8-section template
 
@@ -171,7 +171,7 @@ Check the length:
 python -c "print(len(open('docs/RUN_BRIEF.md', encoding='utf-8').read()))"
 ```
 
-- Characters in our Run Brief: ______
+- Characters in our Run Brief: Fol
 - What we cut to fit, and why it was safe to cut:
 
 ## 11. Presentation notes (six beats; every member speaks)
